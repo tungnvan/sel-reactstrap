@@ -1,0 +1,20 @@
+.docs-sidebar {
+    padding-top: 2rem;
+    background-color: var(--light, white);
+    .nav-item {
+        padding: .2rem 0 .2rem 0;
+    }
+    .nav-link {
+        color: #888;
+        padding: .3rem .5rem .3rem 1rem;
+        border-left: 2px solid transparent;
+    }
+    .nav-link.active {
+        background-color: #eee;
+        color: #666;
+        border-left: 2px solid #d9534f;
+    }
+    .nav-link:hover {
+        color: #777;
+    }
+}
