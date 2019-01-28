@@ -11,9 +11,9 @@ export default class DashboardRoute extends Component {
 
     render() {
         return (
-            <div className="full-body d-flex flex-column">
+            <div className="full-body">
                 <Row><Col md={12}><TopNav /></Col></Row>
-                <div className="flex-grow-1 d-flex flex-row">
+                <div className="below-top-nav d-flex flex-row">
                     <div className="side-nav">
                         <SideNav />
                     </div>

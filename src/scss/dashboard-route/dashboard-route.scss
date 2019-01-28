@@ -1,13 +1,18 @@
+$top-nav-height: 56px;
+
 .full-body {
     height: 100%;
-    .side-nav {
-        width: 200px;
-        background-color: var(--light, white);
-    }
-    .content-wrapper {
-        .content {
-            margin-top: 2rem;
-            padding: 0 15px;
+    .below-top-nav {
+        min-height: calc(100% - #{$top-nav-height});
+        .side-nav {
+            width: 200px;
+            background-color: var(--light, white);
+        }
+        .content-wrapper {
+            .content {
+                margin-top: 2rem;
+                padding: 0 15px;
+            }
         }
     }
 }
