@@ -1,10 +1,10 @@
 import React from 'react';
 import {Table} from 'reactstrap';
-import MainContainer from "../../layout/main-container";
+import MainContent from "../../layout/main-content";
 
 export default function PageOne() {
     return (
-        <MainContainer title="Page One">
+        <MainContent title="Page One">
             <Table striped>
                 <thead>
                 <tr>
@@ -215,6 +215,6 @@ export default function PageOne() {
                 </tr>
                 </tbody>
             </Table>
-        </MainContainer>
+        </MainContent>
     );
 };

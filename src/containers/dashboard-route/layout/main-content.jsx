@@ -1,7 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import PropTypes from 'prop-types';
 
-export default class MainContainer extends Component {
+export default class MainContent extends Component {
 
     render() {
         return (
@@ -14,6 +14,6 @@ export default class MainContainer extends Component {
 
 }
 
-MainContainer.propTypes = {
+MainContent.propTypes = {
     title: PropTypes.string,
 };

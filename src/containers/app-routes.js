@@ -3,7 +3,7 @@ import {Redirect} from 'react-router-dom';
 import DashboardRoute from "./dashboard-route/dashboard-route";
 import LoginRoute from "./login-route/login-route";
 
-export const CONTAINERS_ROUTES = [
+export const APP_ROUTES = [
     {
         path: "/",
         exact: true,

@@ -1,10 +1,10 @@
 import React from 'react';
 import {FormGroup, Col, Button, Table} from 'reactstrap';
-import MainContainer from "../../layout/main-container";
+import MainContent from "../../layout/main-content";
 
 export default function PageTwo() {
     return (
-        <MainContainer title="Page Two">
+        <MainContent title="Page Two">
             <FormGroup row>
                 <Col md={12}>
                     <Button color="primary">primary</Button>{' '}
@@ -50,6 +50,6 @@ export default function PageTwo() {
                     </Table>
                 </Col>
             </FormGroup>
-        </MainContainer>
+        </MainContent>
     );
 };

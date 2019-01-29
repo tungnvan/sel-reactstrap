@@ -17,15 +17,14 @@ import {
 class TopNav extends React.Component {
     constructor(props) {
         super(props);
-
-        this.toggle = this.toggle.bind(this);
-        this._logOut = this._logOut.bind(this);
         this.state = {
             isOpen: false
         };
+        this._toggle = this._toggle.bind(this);
+        this._logOut = this._logOut.bind(this);
     };
 
-    toggle() {
+    _toggle() {
         this.setState({
             isOpen: !this.state.isOpen
         });
@@ -37,9 +36,9 @@ class TopNav extends React.Component {
 
     render() {
         return (
-            <Navbar color="light" light expand="md">
+            <Navbar className="top-nav" color="light" light expand="md">
                 <NavbarBrand href="/">SellPro</NavbarBrand>
-                <NavbarToggler onClick={this.toggle} />
+                <NavbarToggler onClick={this._toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
